@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Restaurant Finder</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/restaurants">Restaurants</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Restaurants</h1>
+        <form id="add-restaurant-form" class="mb-3">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Restaurant Name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="address" placeholder="Address" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="rating" step="0.01" placeholder="Rating" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="cuisine" placeholder="Cuisine" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <textarea name="reviews" placeholder="Reviews" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Restaurant</button>
+        </form>
+        <ul id="restaurant-list" class="list-group"></ul>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
