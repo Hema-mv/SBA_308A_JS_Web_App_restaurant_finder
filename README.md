@@ -19,7 +19,8 @@ Getting Started:-
 
 Prerequisites:-
 
-Node.jsand npm installed on your machine.
+Node.js and npm installed on your machine.
+Axios
 A Google Places API key.
 
 

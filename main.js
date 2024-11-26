@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 restaurantList.appendChild(listItem);
             });
         } catch (error) {
-            alert('Error fetching data from server');
+            alert('2.Error fetching data from server');
         }
     }
 });
