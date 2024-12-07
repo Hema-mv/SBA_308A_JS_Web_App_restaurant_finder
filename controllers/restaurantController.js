@@ -24,11 +24,11 @@ exports.getNearbyRestaurants = async (req, res) => {
     // if (reviews) {
     //     apiUrl += `&keyword=${reviews}`;
     // }
-    console.log(apiUrl)
+   
     try {
         const response = await axios.get(apiUrl);
         let restaurants = response.data.results;
-
+        console.log(restaurants)
         // Filter by minimum reviews if specified
         if (reviews) {
             restaurants = restaurants.filter(restaurant => restaurant.user_ratings_total >= reviews);
